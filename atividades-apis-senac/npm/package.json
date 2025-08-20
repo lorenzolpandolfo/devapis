@@ -1,0 +1,14 @@
+{
+  "name": "lorenzo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0"
+  }
+}
