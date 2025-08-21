@@ -1,6 +1,6 @@
 export const Categories = {
-  HORTIFRUTI: 0,
-  MEAT: 1,
-  DRINK: 2,
-  BAKERY: 3,
+  HORTIFRUTI: "hortifruti",
+  MEAT: "meat",
+  DRINK: "drink",
+  BAKERY: "bakery",
 };

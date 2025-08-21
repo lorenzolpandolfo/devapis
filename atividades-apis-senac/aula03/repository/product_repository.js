@@ -1,9 +1,3 @@
-// save(Product),
-// findAll(), findById(id),
-// updateById(id),
-// deleteById(id),
-// findByCategory(Category), findByName(string)
-
 export class ProductRepository {
   #data;
 
@@ -27,10 +21,20 @@ export class ProductRepository {
   updateById(id, product) {
     this.#data = this.#data.filter((p) => p.id !== id);
     this.#data.push(product);
+    return product;
   }
 
   deleteById(id) {
+    const hadId = this.findById(id);
     this.#data = this.#data.filter((p) => p.id !== id);
-    return id;
+    return hadId !== null;
+  }
+
+  findByCategory(category) {
+    return this.#data.filter((p) => p.category === category);
+  }
+
+  findByName(name) {
+    return this.#data.filter((p) => p.name === name);
   }
 }
